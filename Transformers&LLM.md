@@ -68,23 +68,45 @@ include language modeling as auxiliary task in fine-tuning
 
 <img src="E:\github_repos\paper_reading\fig\BERT.png" alt="BERT" style="zoom:50%;" />
 
+# Training language models to follow instructions with human feedback
 
+**keywords:** LLM, alignment, RLHF
 
+**summary:**
 
+RLHF uses human preferences as reward signals to fine-tune LLM
 
+<img src="E:\github_repos\paper_reading\fig\InstructGPT.png" alt="InstructGPT" style="zoom: 67%;" />
 
+# LORA: LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS
 
+**keywords:** low-rank decomposition, fine-tuning
 
+**summary:**
 
+low-rank parametrization update:
 
+$h = W_0x + \Delta Wx = W_0x + BAx$ , 	$W_0 \in \mathbb R^{d\times k} B\in \mathbb R^{d\times r} A\in \mathbb R^{r\times k}$
 
+Gaussian initialization for $A$ and zero initialization for $B$
 
+# LARGE LANGUAGE MODELS AS OPTIMIZERS
 
+**keywords:** gradient-free optimization, prompt optimization, LLM, optimization by prompting
 
+**summary:**
 
+**meta-prompt**
 
+* optimization problem description (meta-instruction)
+* optimization trajectory (solution-score pairs sorted in ascending order)
 
+**solution generation**
 
+* optimization stability (generate multiple solutions each time)
+* Exploration-exploitation trade-off (tune the temperature)
+
+reach optimum for small-scale problems
 
 
 

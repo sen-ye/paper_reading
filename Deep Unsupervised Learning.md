@@ -196,6 +196,26 @@ Minimization of negative log likelihood of EBM:
 
 **Theorem:** if f is convex-concave then we can always change the min-max and for any saddle we have $\nabla_x f(x,y)=\nabla_y f(x,y) = 0$  
 
+## Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold
+
+**keywords:** GAN, point based image editing, point tracking
+
+**summary:**
+
+input: handle points, target points
+
+<img src="E:\github_repos\paper_reading\fig\DragGAN.png" alt="DragGAN" style="zoom:50%;" />
+
+(1) motion supervision
+
+<img src="E:\github_repos\paper_reading\fig\DragGAN_motion_supervision.png" alt="DragGAN_motion_supervision" style="zoom:50%;" />
+
+<img src="E:\github_repos\paper_reading\fig\DragGAN_motion_loss.png" alt="DragGAN_motion_loss" style="zoom: 50%;" />
+
+(2) point tracking
+
+<img src="E:\github_repos\paper_reading\fig\DragGAN_point_tracking.png" alt="DragGAN_point_tracking" style="zoom: 50%;" />
+
 # Self-supervised Learning
 
 ## Context Encoders: Feature Learning by Inpainting
@@ -288,7 +308,20 @@ goal: large negative samples, consistent key representations
 **keywords:** CLIP, contrastive, supervision from Natural Language
 
 **summary:** 
+
 <img src="E:\github_repos\paper_reading\fig\CLIP.png" alt="CLIP" style="zoom:67%;" />
+
+## Masked Autoencoders Are Scalable Vision Learners
+
+**keywords:** MAE, ViT
+
+**summary:**
+
+Encoder: input: 25% of the image tokens (no mask tokens)
+Decoder: encoded tokens and [MASK] tokens
+Loss: reconstruction MSE loss only on the masked tokens
+
+<img src="E:\github_repos\paper_reading\fig\MAE.png" alt="MAE" style="zoom:50%;" />
 
 # Semi-supervised Learning
 
